@@ -1,0 +1,30 @@
+C:\Users\user1\source\repos\연습2\bin\Debug\연습2.exe.config
+C:\Users\user1\source\repos\연습2\bin\Debug\연습2.exe
+C:\Users\user1\source\repos\연습2\bin\Debug\연습2.pdb
+C:\Users\user1\source\repos\연습2\obj\Debug\Google_simple_scientific_calculator.csproj.AssemblyReference.cache
+C:\Users\user1\source\repos\연습2\obj\Debug\Google_simple_scientific_calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\user1\source\repos\연습2\obj\Debug\MainWindow.baml
+C:\Users\user1\source\repos\연습2\obj\Debug\MainWindow.g.cs
+C:\Users\user1\source\repos\연습2\obj\Debug\App.g.cs
+C:\Users\user1\source\repos\연습2\obj\Debug\연습2_MarkupCompile.cache
+C:\Users\user1\source\repos\연습2\obj\Debug\연습2.g.resources
+C:\Users\user1\source\repos\연습2\obj\Debug\연습2.Properties.Resources.resources
+C:\Users\user1\source\repos\연습2\obj\Debug\Google_simple_scientific_calculator.csproj.GenerateResource.cache
+C:\Users\user1\source\repos\연습2\obj\Debug\Google_simple_scientific_calculator.csproj.CoreCompileInputs.cache
+C:\Users\user1\source\repos\연습2\obj\Debug\연습2.exe
+C:\Users\user1\source\repos\연습2\obj\Debug\연습2.pdb
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\bin\Debug\연습2.exe.config
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\bin\Debug\연습2.exe
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\bin\Debug\연습2.pdb
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\Google_simple_scientific_calculator.csproj.AssemblyReference.cache
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\Google_simple_scientific_calculator.csproj.SuggestedBindingRedirects.cache
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\MainWindow.baml
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\MainWindow.g.cs
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\App.g.cs
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\연습2_MarkupCompile.cache
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\연습2.g.resources
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\연습2.Properties.Resources.resources
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\Google_simple_scientific_calculator.csproj.GenerateResource.cache
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\Google_simple_scientific_calculator.csproj.CoreCompileInputs.cache
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\연습2.exe
+C:\Users\lee seung woo\Desktop\Downloads\간단한구글계산기\연습2\obj\Debug\연습2.pdb

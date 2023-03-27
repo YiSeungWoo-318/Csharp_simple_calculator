@@ -1,0 +1,228 @@
+﻿<Window x:Class="Google_simple_scientific_calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Google Simple Calculator" Height="400" Width="450">
+    <Grid HorizontalAlignment="Center"
+          VerticalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Margin="10">
+            <Border BorderThickness="0" BorderBrush="Black">
+                <TextBlock FontSize="15" VerticalAlignment="Center"
+                           HorizontalAlignment="Right" Foreground="Gray"
+                           Text="{Binding DisplayText1}" />
+            </Border>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" Grid.RowSpan="2" Margin="10">
+            <Border BorderThickness="0.5" BorderBrush="LightGray">
+                <TextBlock FontSize="40" VerticalAlignment="Bottom"
+                           HorizontalAlignment="Right"
+                           Text="{Binding DisplayText}" />
+            </Border>
+        </Grid>
+        <Button Content="0" CommandParameter="0" Grid.Row ="6" Grid.Column="0"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20" >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="." CommandParameter="." Grid.Row ="6" Grid.Column="1"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="=" CommandParameter="=" Grid.Row ="6" Grid.Column="2"
+                Command="{Binding Calculate}" Background="CornflowerBlue" Margin="5" FontSize="30" Foreground="White" FontWeight="UltraBold">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="+" CommandParameter="+" Grid.Row ="6" Grid.Column="3"
+                Command="{Binding Operator}" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color = "SlateGray" Opacity="0.25"/>
+            </Button.Background>
+        </Button>
+        <Button Content="1" CommandParameter="1" Grid.Row ="5" Grid.Column="0"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="2" CommandParameter="2" Grid.Row ="5" Grid.Column="1"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="3" CommandParameter="3" Grid.Row ="5" Grid.Column="2"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="-" CommandParameter="-" Grid.Row ="5" Grid.Column="3"
+                Command="{Binding Operator}" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color = "SlateGray" Opacity="0.25"/>
+            </Button.Background>
+        </Button>
+        <Button Content="4" CommandParameter="4" Grid.Row ="4" Grid.Column="0"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="5" CommandParameter="5" Grid.Row ="4" Grid.Column="1"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="6" CommandParameter="6" Grid.Row ="4" Grid.Column="2"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="×" CommandParameter="×" Grid.Row ="4" Grid.Column="3"
+                Command="{Binding Operator}" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color = "SlateGray" Opacity="0.25"/>
+            </Button.Background>
+        </Button>
+        <Button Content="7" CommandParameter="7" Grid.Row ="3" Grid.Column="0"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="8" CommandParameter="8" Grid.Row ="3" Grid.Column="1"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="9" CommandParameter="9" Grid.Row ="3" Grid.Column="2"
+                Command="{Binding Append}" Background="GhostWhite" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="÷" CommandParameter="÷" Grid.Row ="3" Grid.Column="3"
+                Command="{Binding Operator}" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color = "SlateGray" Opacity="0.25"/>
+            </Button.Background>
+        </Button>
+        <Button Content="(" CommandParameter="(" Grid.Row ="2" Grid.Column="0"
+                Command="{Binding Operator}" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color = "SlateGray" Opacity="0.25"/>
+            </Button.Background>
+        </Button>
+        <Button Content=")" CommandParameter=")" Grid.Row ="2" Grid.Column="1"
+                Command="{Binding Operator}" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color = "SlateGray" Opacity="0.25"/>
+            </Button.Background>
+        </Button>
+        <Button Content="%" CommandParameter="%" Grid.Row ="2" Grid.Column="2"
+                Command="{Binding Operator}" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color = "SlateGray" Opacity="0.25"/>
+            </Button.Background>
+        </Button>
+        <Button Content="{Binding ACCE}" Grid.Row ="2" Grid.Column="3"
+                Command="{Binding Backspace}" Margin="5" FontSize="20">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+            <Button.Background>
+                <SolidColorBrush Color = "SlateGray" Opacity="0.25"/>
+            </Button.Background>
+        </Button>
+
+
+
+    </Grid>
+</Window>
